@@ -1,0 +1,13 @@
+config GOOGLE
+	bool "Hidden options for Google pixel support"
+	# Force enable the GKI hack dependencies for tristate dependencies so
+	# that the dependencies are =y instead of =m, since they're expected to
+	# be =y. This lets us work correctly without needing to enable
+	# unnecessary cruft from the GKI hack configs.
+	select DRM_KMS_HELPER
+	select PHYLINK
+	select REGMAP_SPMI
+	select V4L2_MEM2MEM_DEV
+	select VIDEOBUF2_DMA_SG
+	select DRM_MIPI_DSI
+	select SND_SOC_COMPRESS
