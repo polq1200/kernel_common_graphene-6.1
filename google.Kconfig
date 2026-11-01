@@ -11,3 +11,5 @@ config GOOGLE
 	select VIDEOBUF2_DMA_SG
 	select DRM_MIPI_DSI
 	select SND_SOC_COMPRESS
+	select REGMAP_IRQ
+	select VIDEOMODE_HELPERS
