@@ -13,3 +13,4 @@ config GOOGLE
 	select SND_SOC_COMPRESS
 	select REGMAP_IRQ
 	select VIDEOMODE_HELPERS
+	select TRACE_GPU_MEM
