@@ -14,3 +14,4 @@ config GOOGLE
 	select REGMAP_IRQ
 	select VIDEOMODE_HELPERS
 	select TRACE_GPU_MEM
+	select PM_GENERIC_DOMAINS
